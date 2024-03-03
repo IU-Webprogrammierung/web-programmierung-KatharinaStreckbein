@@ -1,8 +1,8 @@
 :root{
     --main-brand-color: #fa3025;
     --primary-color: #ffffff;
-    --secondary-color: #15171C;
-    --light-secondary-color: #2E3744;
+    --secondary-color: #000000;
+    --light-secondary-color: #26252d;
     --text-color: #ffffff;
     --secondary-text-color: #B3B4B6;
 }
@@ -128,16 +128,23 @@ label[for="toggle_button"] span{
 .textabschnitt{
     width: 750px;
 }
+#textabschnitt hr{
+    position: center;
+    margin-bottom: 20px;
+    border-color: var(--main-brand-color); 
+    border-width: 3px;
+    width: 100px
+}
 @media(max-width: 800px){
     #textabschnitt{
-        padding: 50px;
-    }
+        padding: 100px;
+    }    
     #textabschnitt h3{
         text-align: center;
         margin-bottom: 20px;
     }
     #textabschnitt p{
-                text-align: center;
+        text-align: center;
     }
 }
 
@@ -154,9 +161,11 @@ label[for="toggle_button"] span{
     display: flex;
     gap: 40px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card{
     width: 350px;
+    max-width: 90%;
     background-color: var(--light-secondary-color);
     border-radius: 100px;
     padding: 60px 20px;
