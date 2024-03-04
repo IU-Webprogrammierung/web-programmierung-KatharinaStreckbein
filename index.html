@@ -6,32 +6,43 @@
     <title>Projekt Web-Programmierung Katharina Streckbein</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <div class="header_text">
             <nav>
-                <input type="checkbox" id="toggle_button">
-                <label for="toggle_button">
-                    <span class="material-symbols-rounded">menu</span>
-                    </label>
-                <ul>
-                    <li><a href="index.html">Startseite</a></li>
-                    <li><a href="Jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
-                    <li><a href="Unsere Wache.html">Unsere Wache</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="Kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-                <h1><span style="color: var(--main-brand-color);">Feuerwehr</span> ist EHRENSACHE - mach mit!</h1>
-                <p class="subheading">Jeder geht davon aus, dass die Feuerwehr schnell und zahlreich zur Stelle ist, wenn es irgendwo brennt. Als Freiwillige Feuerwehr tun wir das - neben unserem Beruf! Wir kommen aus allen Bereichen der Gesellschaft: Handwerk, Selbstständige, Angestellte, Student:innen und Schüler:innen.</p> 
+                <a href="index.html"><img src="images/feuerwehr-leverkusen.png"></a>
+                <div class="menu-links" id="menuLinks">
+                    <span class="material-symbols-rounded" onclick="hidemenuicon()">close</span>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="Jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
+                        <li><a href="Unsere Wache.html">Unsere Wache</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <span class="material-symbols-rounded" onclick="showmenuicon()">menu</span>
+            </nav>     
         </div>
-        <div class="circle">
-            <img src="images/einsatz.jpg" alt="">
-        </div>
+        
     </header>
     
     <main>   
+        <section id="fwIntro">
+            <div class="border">
+                <img src="images/einsatz.jpg" alt="">
+            </div>
+            <div class="subheading">
+                <h1><span style="color: var(--main-brand-color);">Feuerwehr</span> ist EHRENSACHE - mach mit!</h1>
+                <p>Jeder geht davon aus, dass die Feuerwehr schnell und zahlreich zur Stelle ist, wenn es irgendwo brennt. Als Freiwillige Feuerwehr tun wir das - neben unserem Beruf! Wir kommen aus allen Bereichen der Gesellschaft: Handwerk, Selbstständige, Angestellte, Student:innen und Schüler:innen.</p>
+            </div> 
+        </section>
+        
+        
+        
+        
         <article id="textabschnitt">
                         <h3>Jeder hat seine Stärken - hast du deine schon entdeckt?</h3>
             <div class="trenner" style="margin-top: 25px; margin-bottom: 25px;"></div>
@@ -80,5 +91,16 @@
                 </div>
     </footer>
 
+    <script>
+        var menuLinks = document.getElementById("menuLinks");
+
+        function showmenuicon(){
+            menuLinks.style.right = "0"
+        }
+        function hidemenuicon(){
+            menuLinks.style.right = "-200px"
+        }
+
+    </script>
 </body>
 </html>
