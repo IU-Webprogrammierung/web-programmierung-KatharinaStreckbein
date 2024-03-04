@@ -21,7 +21,7 @@ body{
     color: var(--text-color);
 }
 h1{
-    font-size: 100px;
+    font-size: 90px;
     line-height: 115%;
 }
 .subheading{
@@ -142,8 +142,7 @@ label[for="toggle_button"] span{
 .trenner{
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
     background-color: var(--main-brand-color);
     width: 25%;
     height: 4px;
@@ -182,7 +181,7 @@ label[for="toggle_button"] span{
     width: 350px;
     max-width: 90%;
     background-color: var(--third-color);
-    border-radius: 100px;
+    border-radius: 10px;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -196,7 +195,7 @@ label[for="toggle_button"] span{
     background-color: var(--main-brand-color);
     width: min-content;
     padding: 15px 40px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 0 auto;
     text-decoration: none;
     color: var(--primary-color);
@@ -207,15 +206,10 @@ label[for="toggle_button"] span{
     background: transparent;
 }
 #bildabschnitt{
-    
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/einsatz.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/pixabay-SIR22-2016-dortmund-1626916_1280.jpg);
     background-position: center;
     background-size: cover;
-    
-    
     padding: 50px 50px;
-   
-  
     display: flexbox; 
     text-align: center; 
     justify-content: center; 
