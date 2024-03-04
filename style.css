@@ -125,7 +125,7 @@ label[for="toggle_button"] span{
 
 #textabschnitt{
     padding: 50px 50px;
-    background-color: var(--primary-color);
+    background-color: var(--light-secondary-color);
     display: flexbox; 
     text-align: center; 
     justify-content: center; 
@@ -224,16 +224,25 @@ label[for="toggle_button"] span{
 }
 
 .footer{
-    width: 100%;
-    padding: 60px 20px;
+    width: 80%;
+    padding: 100px 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: 20%;
+    gap: 40px;
+    align-items: center;
 }
 .footer-column {
     flex: 1;
     text-align: left;
     margin-bottom: 30px;
+}
+.footer-column h3{
+    color: var(--main-brand-color);
+}
+.footer-column p{
+    color: var(--secondary-text-color);
 }
 @media(max-width: 800px){
     .footer-column{
