@@ -6,22 +6,28 @@
     <title>Projekt Web-Programmierung Katharina Streckbein</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <body>
     <header>
         <div class="header_text">
             <nav>
-                <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="Jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
-                <li><a href="Unsere Wache.html">Unsere Wache</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-                <h1>Kontakt</h1>
-</head>
-<body>
+                <a href="index.html"><img src="images/feuerwehr-leverkusen.png"></a>
+                <div class="menu-links" id="menuLinks">
+                    <span class="material-symbols-rounded" onclick="hidemenuicon()">close</span>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="Jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
+                        <li><a href="Unsere Wache.html">Unsere Wache</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <span class="material-symbols-rounded" onclick="showmenuicon()">menu</span>
+            </nav>     
+        </div>
+    </header>
+
+<main>
     <section class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.227840686773!2d6.979781676345384!3d51.048880671712666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf2e84906b9e1d%3A0x57241bf463416bbf!2sFreiwillige%20Feuerwehr%20Leverkusen%20%E2%80%93%20L%C3%B6schzug%2013!5e0!3m2!1sde!2sde!4v1707228671339!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
@@ -78,5 +84,21 @@
         </div>
 
     </section>
+
+</main>
+
+<footer>
+
+</footer>
+    <script>
+        var menuLinks = document.getElementById("menuLinks");
+
+        function showmenuicon(){
+            menuLinks.style.right = "0"
+        }
+        function hidemenuicon(){
+            menuLinks.style.right = "-200px"
+        }
+    </script>
 </body>
 </html>

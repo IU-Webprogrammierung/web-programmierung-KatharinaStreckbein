@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugendfeuerwehr</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="Jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
-                <li><a href="Unsere Wache.html">Unsere Wache</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-        </header>
+        <div class="header_text">
+            <nav>
+                <a href="index.html"><img src="images/feuerwehr-leverkusen.png"></a>
+                <div class="menu-links" id="menuLinks">
+                    <span class="material-symbols-rounded" onclick="hidemenuicon()">close</span>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="Jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
+                        <li><a href="Unsere Wache.html">Unsere Wache</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <span class="material-symbols-rounded" onclick="showmenuicon()">menu</span>
+            </nav>     
+        </div>
+    </header>
+
     <section>
         <h1>Jugendfeuerwehr</h1>
         <img src="images/pixabay-sphaeroid-2018.jpg" alt="">
@@ -42,6 +52,15 @@
                     </div>
                 </div>
     </footer>
+    <script>
+        var menuLinks = document.getElementById("menuLinks");
 
+        function showmenuicon(){
+            menuLinks.style.right = "0"
+        }
+        function hidemenuicon(){
+            menuLinks.style.right = "-200px"
+        }
+    </script>
 </body>
 </html>
