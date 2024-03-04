@@ -1,10 +1,13 @@
 :root{
-    --main-brand-color: #fa3025;
+    --main-brand-color: #A61717;
     --primary-color: #ffffff;
     --secondary-color: #000000;
-    --light-secondary-color: #26252d;
+    --third-color: #1f1f1f;
+    --light-secondary-color: #b4b4b2;
     --text-color: #ffffff;
     --secondary-text-color: #B3B4B6;
+    --third-text-color: #0d0d0d;
+
 }
 *{
     margin: 0;
@@ -13,7 +16,7 @@
 body{
     min-height: 100vh;
     background-color: var(--secondary-color);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: var(--text-color);
 }
@@ -122,18 +125,28 @@ label[for="toggle_button"] span{
 
 #textabschnitt{
     padding: 50px 50px;
-    background-color: var(--light-secondary-color);
+    background-color: var(--primary-color);
     display: flexboxflex;   
 }
 .textabschnitt{
     width: 750px;
 }
-#textabschnitt hr{
-    position: center;
-    margin-bottom: 20px;
-    border-color: var(--main-brand-color); 
-    border-width: 3px;
-    width: 100px
+#textabschnitt h3{
+    color: var(--third-text-color)
+}
+#textabschnitt p{
+    color: var(--third-text-color)
+}
+.trenner{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: var(--main-brand-color);
+    width: 25%;
+    height: 2px;
+    position: relative;
+    display: block;
 }
 @media(max-width: 800px){
     #textabschnitt{
