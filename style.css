@@ -253,7 +253,7 @@ nav .material-symbols-rounded{
 
 .footer{
     width: 80%;
-    padding: 100px 25px;
+    padding: 70px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -318,7 +318,7 @@ nav .material-symbols-rounded{
 }
 #jugendText p{
     margin: 40px;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color)   
     
 }
 #jugendText a{
@@ -350,3 +350,24 @@ nav .material-symbols-rounded{
     }
 }
 
+/* Unsere Wache */
+
+#wacheIntro{
+    padding: 50px 50px;
+    display: flexbox; 
+    text-align: center; 
+    justify-content: center; 
+}
+.wacheIntro{
+    width: 750px;
+}
+#wacheIntro p{
+    margin: 40px;
+    color: var(--secondary-text-color)
+    
+}
+@media(max-width: 800px){
+    #wacheIntro p{
+        margin: 50px 0 50px 0;
+    }
+}
