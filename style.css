@@ -268,3 +268,68 @@ nav .material-symbols-rounded{
         flex-basis: 100%;
     }
 }
+
+
+/* Jugendfeuerwehr */
+
+
+#bannerJugend{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/pixabay-sphaeroid-2018.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 200px;
+    display: flexbox; 
+    text-align: center; 
+    justify-content: center; 
+}
+#bannerJugend h1{
+    margin: 40px;
+    text-align: center;
+}
+#bannerJugend p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#jugendText{
+    padding: 50px 50px;
+    background-color: var(--third-color);
+    display: flexbox; 
+    text-align: center; 
+    justify-content: center; 
+}
+.jugendText{
+    width: 750px;
+}
+#jugendText p{
+    margin: 40px;
+    color: var(--secondary-text-color)
+    
+}
+#jugendText a{
+    background-color: var(--main-brand-color);
+    width: min-content;
+    padding: 15px 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 4px solid var(--main-brand-color);
+    transition: 150ms ease-in-out;
+}
+#jugendText a:hover{
+    background: transparent;
+}
+
+@media(max-width: 800px){
+    #jugendText p{
+        margin: 0 0 50px 0;
+    }
+    #bannerJugend h1{
+        margin: 10px;
+        text-align: center;
+        font-size: 12vw;
+        display: flex;
+    }
+}
+
