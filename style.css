@@ -432,16 +432,14 @@ nav .material-symbols-rounded{
 /* FAQs */
 
 
-main{
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(images/pexels-markus-spiske-2019-3058827.jpg);
-    background-position: center;
-    background-size: cover;
-}
 #faqIntro{
     padding: 50px 50px;
     display: flexbox; 
     text-align: center; 
     justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(images/pexels-markus-spiske-2019-3058827.jpg);
+    background-position: center;
+    background-size: cover;
 }
 faq{
     width: 100%;
@@ -452,7 +450,7 @@ faq{
 }
 .container{
     width: 100%;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -498,7 +496,14 @@ faq{
 }
 .answer p{
     padding: 5% ;
+    text-align: left;
 }
 .accordion-item:target .answer{
     max-height: 20%;
+}
+@media(max-width: 800px){
+    .container{
+        max-width: 90%;
+        position: center;
+     } 
 }
