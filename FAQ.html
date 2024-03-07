@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragen und Antworten</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -37,7 +38,7 @@
             <div class="container">
                 <div class="accordion">
                     <div class="accordion-item" id="question1">
-                        <a class="accordion-link" href="#question1">
+                        <a href="#question1" class="accordion-link">
                             <h4>Wie kann ich die Freiwillige Feuerwehr kennenlernen?</h4>
                             <div class="material-symbols-rounded">add</div>
                             
@@ -136,14 +137,55 @@
     </footer>
 
     <script>
-        var menuLinks = document.getElementById("menuLinks");
+       
+       /* Menü */
 
-        function showmenuicon(){
-            menuLinks.style.right = "0"
-        }
-        function hidemenuicon(){
-            menuLinks.style.right = "-200px"
-        }
+       var menuLinks = document.getElementById("menuLinks");
+
+            function showmenuicon(){
+                menuLinks.style.right = "0"
+            }
+            function hidemenuicon(){
+                menuLinks.style.right = "-200px"
+            }
+
+
+        /* Akkordeon */
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+        var accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(function(item) {
+
+        item.addEventListener('click', function() {
+
+         var answer = this.querySelector('.answer');
+
+         var isActive = answer.classList.contains('active');
+
+
+        /* Akkordeon - Schließen */
+
+        accordionItems.forEach(function(otherItem) {
+
+        var otherAnswer = otherItem.querySelector('.answer');
+
+        otherAnswer.classList.remove('active');
+
+        otherAnswer.style.maxHeight = 0;  
+        });
+
+
+        /* Akkordeon - Öffnen der Antwort, wenn sie nicht aktiv ist*/
+
+        if (!isActive) {
+            answer.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            } 
+            });  
+        });
+        });
     </script>
 </body>
 </html>
