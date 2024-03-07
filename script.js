@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var isActive = answer.classList.contains('active');
   
  
-        // Schließe alle Antworten
+        /* Alle Antworten schließen*/
   
         accordionItems.forEach(function(otherItem) {
   
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
   
 
-        // Öffne die Antwort, wenn sie nicht aktiv ist
+        /* Antwort öffnen, wenn nicht aktiv */
   
         if (!isActive) {
           answer.classList.add('active');

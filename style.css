@@ -14,6 +14,12 @@
     padding: 0;
 }
 
+
+
+/*Allgemein*/
+
+
+
 body{
     min-height: 100vh;
     background-color: var(--secondary-color);
@@ -109,6 +115,13 @@ nav img{
 .menu-links ul li:hover::after{
     width: 100%;
 }
+
+
+
+/* Startseite */
+
+
+
 .header_text{
     width: 850px;
 }
@@ -311,7 +324,9 @@ nav .material-symbols-rounded{
 }
 
 
+
 /* Jugendfeuerwehr */
+
 
 
 #bannerJugend{
@@ -383,7 +398,9 @@ nav .material-symbols-rounded{
 }
 
 
+
 /* Unsere Wache */
+
 
 
 #wacheIntro{
@@ -462,7 +479,9 @@ nav .material-symbols-rounded{
 }
 
 
+
 /* FAQs */
+
 
 
 #faqIntro{
@@ -552,7 +571,9 @@ nav .material-symbols-rounded{
 }
 
 
+
 /* Kontakt */
+
 
 
 #kontaktIntro{
