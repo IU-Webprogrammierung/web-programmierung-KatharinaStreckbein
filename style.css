@@ -505,7 +505,7 @@ nav .material-symbols-rounded{
     width: 100%;
     max-width: 70%;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
 }
 .accordion-item{
     background-color: var(--third-color);
