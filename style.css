@@ -7,6 +7,7 @@
     --text-color: #ffffff;
     --secondary-text-color: #B3B4B6;
     --third-text-color: #0d0d0d;
+    --button-hover-color: #a6171765; 
 }
 
 *{
@@ -54,7 +55,7 @@ h1{
 }
 
 .button:hover{
-    background: transparent;
+    background: var(--button-hover-color);
 }
 
 @media(max-width: 800px){
