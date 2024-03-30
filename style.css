@@ -553,6 +553,14 @@ nav .material-symbols-rounded{
     padding: 5% ;
     text-align: left;
 }
+.answer ol{
+    padding: 7%;
+    text-align: left;
+}
+.answer li{
+    padding: 2%;
+    text-align: left;
+}
 .accordion-item:target .answer{
     max-height: 20%;
 }
